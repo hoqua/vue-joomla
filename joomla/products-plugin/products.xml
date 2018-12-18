@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5"
+           type="plugin"
+           group="ajax"
+           method="upgrade">
+	<name>Products - ajax compoent</name>
+	<version>0.1</version>
+	<creationDate>November 20, 2018</creationDate>
+	<author>Dmitrii Zoloturkin</author>
+	<authorEmail>dmitrii.zolotukhin@gmail.com</authorEmail>
+	<license>GNU General Public License version 2 or later</license>
+	<copyright>Copyright (C) 2013 zolotukhin llc. All rights reserved.</copyright>
+	<description>Joomla products ajax plugin</description>
+
+	  <install> <!-- Runs on install -->
+		<sql>
+		    <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	    </install>
+	    <uninstall> <!-- Runs on uninstall -->
+		<sql>
+		    <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	    </uninstall>
+
+	<files>
+		<filename plugin="products">products.php</filename>
+		<folder>sql</folder>
+	</files>
+
+</extension>

@@ -1,0 +1,31 @@
+{
+    "name": "calculator",
+    "title": "calculator",
+    "icon": "${THEME}/vendor/yootheme/theme/builder/calculator/icon.svg",
+    "iconSmall": "${THEME}/vendor/yootheme/theme/builder/calculator/icon-small.svg",
+    "element": true,
+    "container": true,
+    "width": 500,
+    "defaults": {
+        "field_select": 1
+    },
+    "fields": {
+        "field_text": {
+            "label": "Имя из базы данных (префикс)",
+            "type": "text"
+        }
+    },
+    "fieldset": {
+        "default": {
+            "type": "tabs",
+            "fields": [
+                {
+                    "title": "Settings",
+                    "fields": [
+                        "field_text"
+                    ]
+                }
+            ]
+        }
+    }
+}
